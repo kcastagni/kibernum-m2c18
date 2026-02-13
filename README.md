@@ -9,3 +9,4 @@ El contenido presentando tiene mi currículum profesional, detallando mi experei
 
 ## Currículum Vitae en vivo 
 Puedes ver el currícculum funcionando aquí: 
+https://kcastagni.github.io/kibernum-m2c18/
