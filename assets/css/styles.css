@@ -179,6 +179,16 @@ align-items: center;
     border-color: var(--border-color-1) !important;
 }
 
+/* Trayectoria */
+[data-theme="dark"] .trayectoria-item h3{
+    color: var(--color-neutral) !important;
+}
+
+[data-theme="dark"] .text-muted{
+    color: var(--color-neutral) !important;
+}
+
+
 
 /* Habilidaes */
 [data-theme="dark"] .profile-card, 
