@@ -65,7 +65,7 @@ color: var(--color-secondary) !important;
 
 .hero-bg {
 background: linear-gradient(rgba(74, 93, 78, 0.5), rgba(74, 93, 78, 0.5)),
-url('../img/Fondo_Fotografía.webp');
+url('../img/fondo_fotografia.webp');
 background-size: cover; 
 background-position: center; 
 background-repeat: no-repeat;
