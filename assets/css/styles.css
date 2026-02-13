@@ -1,0 +1,248 @@
+:root {
+    /* Tipografías */
+    --font-titulos: 'Montserrat', sans-serif;
+    --font-cuerpo: 'Open Sans', sans-serif;
+
+    /* Tamaños textos */
+    --h1-size: 2.5rem;    
+    --h2-size: 1.8rem;   
+    --h3-size: 1.3rem;    
+    --body-size: 1rem;    
+    --small-size: 0.95rem; 
+
+    /* Colores */
+    --color-primary: #313131;
+    --color-secondary: #4A5D4E;
+    --color-terciary: #83a38a;
+    --color-neutral: #f1f1f1;
+    --border-color-1: #eeeeee;
+    --border-color-2: #010101;
+    --color-bg-1: #fff;
+    --color-bg-2: #1e1e1e;
+    --color-negro: #000;
+}
+
+/* Aplicación de estilos */
+h1 {
+    font-family: var(--font-titulos);
+    font-size: var(--h1-size);
+}
+
+h2 {
+    font-family: var(--font-titulos);
+    font-size: var(--h2-size);
+}
+
+h3 {
+    font-family: var(--font-titulos);
+    font-size: var(--h3-size);
+}
+
+
+p, li {
+    font-family: var(--font-cuerpo);
+    font-size: var(--body-size);
+}
+
+.skill-card p {
+    font-family: var(--font-titulos);
+    font-size: var(--small-size);
+}
+
+
+/* Navbar */
+.navbar .nav-link {
+letter-spacing: 1px;
+transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+color: var(--color-secondary) !important; 
+}
+
+
+/* Fondo Header */
+
+.hero-bg {
+background: linear-gradient(rgba(74, 93, 78, 0.5), rgba(74, 93, 78, 0.5)),
+url('../img/Fondo_Fotografía.webp');
+background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat;
+padding: 100px 0; 
+min-height: 90vh; 
+display: flex;
+align-items: center; 
+}
+
+/* Habilidades */ 
+.skill-card {
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid var(--border-color-1) !important; 
+    border-radius: 0.75rem;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px); 
+    border-color: var(--color-bg-2) !important; 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+.skill-card i {
+    color: var(--color-primary);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover i {
+    transform: scale(1.1); 
+}
+
+/* Botón color Habilidades */
+.habilidades-alternativo .skill-card {
+    background-color: var(--color-secondary) !important;
+    color: var(--color-neutral) !important;
+    border-color: var(--border-color-1) !important;
+}
+
+.habilidades-alternativo .skill-card i {
+    color: var(--color-neutral) !important;
+}
+
+
+.habilidades-alternativo .skill-card:hover {
+    background-color: var(--color-bg-2) !important;
+    border-color: var(--color-bg-2) !important;
+}
+
+/* Botón Habildiades - Modo oscuro */
+[data-theme="dark"] #btn-color-habilidades {
+    border-color: var(--border-color-1) !important;
+    color: var(--color-neutral) !important;
+}
+
+
+/* Trayetoria */ 
+
+.trayectoria-item {
+    position: relative;
+    padding-left: 1.5rem !important; 
+    border-left: 2px solid var(--color-secondary) !important; 
+    margin-bottom: 0;
+    transition: border-color 0.8s ease; 
+}
+
+.trayectoria-item.is-active {
+    border-left-color: var(--color-terciary) !important;
+}
+ 
+/* Botón Formulario */
+
+#contact-form .btn-dark {
+    background-color: var(--color-secondary);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#contact-form .btn-dark:hover {
+    background-color: var(--color-terciary) !important;
+    color: var(--color-neutral) !important;          
+    transform: translateY(-2px);        
+    box-shadow: 0 4px 12px rgba(74, 93, 78, 0.3); 
+}
+
+/* ---- Modo Oscuro ---- */
+
+/* Fondo */
+[data-theme="dark"] body {
+    background-color: var(--color-bg-2) !important;
+    color: var(--color-neutral) !important;
+}
+
+/* Navbar */
+[data-theme="dark"] .navbar {
+    background-color: var(--color-negro) !important;
+    border-bottom: 1px solid var(--color-bg-2) !important;
+}
+
+[data-theme="dark"] .navbar .nav-link, 
+[data-theme="dark"] .navbar-brand {
+    color: var(--color-neutral) !important;
+}
+
+/* Icono Navbar */
+
+[data-theme="dark"] .navbar-toggler-icon {
+    filter: invert(1) grayscale(100%) brightness(200%) !important;
+}
+
+[data-theme="dark"] .navbar-toggler {
+    border-color: var(--border-color-1) !important;
+}
+
+
+/* Habilidaes */
+[data-theme="dark"] .profile-card, 
+[data-theme="dark"] .skill-card {
+    background-color: var(--color-negro) !important;
+    border-color: var(--border-color-1) !important;
+    color: var(--color-neutral) !important;
+}
+
+
+[data-theme="dark"] .skill-card i {
+    color: var(--color-neutral) !important;
+}
+
+
+/* Contacto */
+[data-theme="dark"] #contacto {
+    background-color: var(--color-negro) !important;
+    border-top: 1px solid var(--border-color-1) !important;
+}
+
+[data-theme="dark"] .custom-input {
+    background-color: var(--color-bg-2) !important;
+    border: 1px solid var(--color-primary) !important;
+    color: var(--color-neutral) !important;
+}
+
+[data-theme="dark"] .vertical-divider {
+    border-left-color: var(--color-neutral) !important;
+}
+
+/* Redes sociales */
+[data-theme="dark"] #theme-toggle {
+    border-color: var(--border-color-1) !important;
+    color: var(--color-neutral) !important;
+}
+
+[data-theme="dark"] .social-icons a i {
+    color: var(--color-neutral) !important;
+}
+
+/* Botón Formulario */
+[data-theme="dark"] #contact-form .btn-dark {
+    background-color: var(--color-bg-1) !important; 
+    color: var(--color-primary) !important; 
+    font-weight: bold !important;
+}
+
+[data-theme="dark"] #contact-form .btn-dark:hover {
+    background-color: var(--color-secondary) !important; 
+    color: var(--color-neutral) !important;
+    transform: translateY(-2px);
+}
+
+
+/* Efecto transición */ 
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+section.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
